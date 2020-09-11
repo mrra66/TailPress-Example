@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/tailwind.css">
+    <style>
+      html {
+        font-family: 'Roboto';
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center">
+    <div class="flex flex-row w-3/6 h-auto rounded-md justify-between shadow-md">
+      <div class="flex-1 bg-blue-500 items-center">
+        <!--  Image Background  -->
+      </div>
+      <div class="flex-1 p-5 items-center">
+        <div class="mb-10">
+          <h1 class="font-bold text-2xl"><%= title %></h1>
+            <span class="text-gray-700 text-sm">Silahkan login menggunakan akun anda.</span>
+        </div>
+        <div class="mb-5">
+          <div class="mb-2">
+            <span class="font-medium text-gray-700 text-sm">Alamat Email</span>
+          </div>
+          <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="email" placeholder="cahyo@example.com">
+        </div>
+        <div class="mb-5">
+          <div class="mb-2">
+            <span class="font-medium text-gray-700 text-sm">Kata Sandi</span>
+          </div>
+          <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="password" placeholder="*******">
+        </div>
+        <div class="mb-10">
+          <button class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">
+            Submit
+          </button>
+        </div>
+        <footer class="mt-2 text-center">
+          <span class="text-gray-500 text-sm">2020 © <%= title %></span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
